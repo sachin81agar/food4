@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Delicious Eats</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for any cuisine...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="filters">
+            <h2>Filters</h2>
+            <div class="delivery-options">
+                <label>
+                    <input type="radio" name="delivery-type" value="delivery" checked>
+                    Delivery
+                </label>
+                <label>
+                    <input type="radio" name="delivery-type" value="pickup">
+                    Pickup
+                </label>
+            </div>
+
+            <div class="time-options">
+                <label for="delivery-time">Select time:</label>
+                <input type="time" id="delivery-time" name="delivery-time" min="10:00" max="22:00" required>
+            </div>
+
+            <div class="cuisine-options">
+                <h3>Popular Cuisines</h3>
+                <ul>
+                    <li>American</li>
+                    <li>Italian</li>
+                    <li>Thai</li>
+                    <li>Indian</li>
+                    <li>Home-made Local</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="results">
+            <!-- Display search results here -->
+            <!-- Each result should have an image, name, description, and delivery/pickup options -->
+            <!-- Use a responsive grid layout for better UI/UX -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Delicious Eats. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
